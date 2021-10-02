@@ -6,11 +6,13 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: 7.4
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -32,9 +34,3 @@ jobs:
       
     - name: Coding standards
       run: composer ecs
-      
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    # - name: Run test suite
-    #   run: composer run-script test
