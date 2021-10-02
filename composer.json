@@ -45,6 +45,7 @@
         ],
         "serve": "php -S 0.0.0.0:8000 public/server.php -t ./",
         "test": "./vendor/bin/pest --coverage",
-        "style": "./vendor/bin/ecs check --no-progress-bar --no-error-table"
+        "style": "./vendor/bin/ecs check --no-progress-bar",
+        "style-fix": "./vendor/bin/ecs check --no-progress-bar --fix"
     }
 }

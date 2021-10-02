@@ -37,7 +37,6 @@ class Application
 
     public function __construct()
     {
-        
         Validator::langDir(__DIR__ . '/vendor/vlucas/valitron/lang/');
         Validator::lang('pt-br');
         

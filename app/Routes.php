@@ -11,12 +11,12 @@ class Routes
 {
     public function __construct(App $app)
     {
-        $app->options( '/{routes:.*}', function (Request $request, Response $response) {
+        $app->options('/{routes:.*}', function (Request $request, Response $response) {
             return $response;
         });
 
         $sleep = function (Request $request, Response $response) {
-            sleep(2.5 );
+            sleep(2.5);
             $response->getBody()->write('{"Hello": "World"}');
             return $response;
         };
