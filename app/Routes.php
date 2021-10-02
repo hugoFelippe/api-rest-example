@@ -16,7 +16,7 @@ class Routes
         });
 
         $sleep = function (Request $request, Response $response) {
-            sleep(2.5);
+            sleep(2.5 );
             $response->getBody()->write('{"Hello": "World"}');
             return $response;
         };
