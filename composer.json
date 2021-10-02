@@ -1,5 +1,6 @@
 {
-    "name": "hugofelippe/apirest",
+    "name": "hugofelippe/api-rest-example",
+    "description": "Um exemplo de estrutura de api REST em PHP",
     "type": "project",
     "license": "MIT",
     "minimum-stability": "stable",
@@ -44,7 +45,7 @@
         ],
         "serve": "php -S 0.0.0.0:8000 public/server.php -t ./",
         "test": "./vendor/bin/pest --coverage",
-        "style": "./vendor/bin/ecs check",
-        "ecs": "./vendor/bin/ecs check | tail -n 5"
+        "style": "./vendor/bin/ecs check --no-progress-bar",
+        "style-fix": "./vendor/bin/ecs check --no-progress-bar --fix"
     }
 }
