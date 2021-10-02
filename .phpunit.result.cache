@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"C:\\Users\\hfeli\\Projects\\exp\\actions-test\\tests\\ExampleTest.php::example":0.005}}
+{"version":1,"defects":{"C:\\Users\\hfeli\\Projects\\root\\api-rest-example\\tests\\ExampleTest.php::example":3},"times":{"C:\\Users\\hfeli\\Projects\\exp\\actions-test\\tests\\ExampleTest.php::example":0.005,"C:\\Users\\hfeli\\Projects\\root\\api-rest-example\\tests\\ExampleTest.php::example":0.008}}
