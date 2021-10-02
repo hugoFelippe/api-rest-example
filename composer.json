@@ -1,0 +1,50 @@
+{
+    "name": "hugofelippe/apirest",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Hugo Felippe de Souza Cruz",
+            "email": "hfelipecruz07@gmail.com"
+        }
+    ],
+    "require": {
+        "lcobucci/jwt": "^4.1",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "monolog/monolog": "^2.3",
+        "php-di/php-di": "^6.3",
+        "ralouphie/mimey": "^2.1",
+        "slim/psr7": "^1.4",
+        "slim/slim": "^4.8",
+        "vlucas/valitron": "^1.4",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "require-dev": {
+        "php-amqplib/php-amqplib": "^3.0",
+        "symplify/easy-coding-standard": "^9.4",
+        "pestphp/pest": "^1.18",
+        "phpmetrics/phpmetrics": "^2.7",
+        "php-coveralls/php-coveralls": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Events\\": "events/",
+            "Lib\\": "lib/",
+            "Middleware\\": "middleware/",
+            "Routes\\": "routes/",
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@test",
+            "@style"
+        ],
+        "serve": "php -S 0.0.0.0:8000 public/server.php -t ./",
+        "test": "./vendor/bin/pest --coverage",
+        "style": "./vendor/bin/ecs check",
+        "ecs": "./vendor/bin/ecs check | tail -n 5"
+    }
+}
