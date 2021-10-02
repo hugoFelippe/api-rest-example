@@ -1,5 +1,6 @@
 {
     "name": "hugofelippe/api-rest-example",
+    "description": "Um exemplo de estrutura de api REST em PHP",
     "type": "project",
     "license": "MIT",
     "minimum-stability": "stable",
